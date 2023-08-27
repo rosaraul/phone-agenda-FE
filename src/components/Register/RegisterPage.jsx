@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import { motion } from 'framer-motion';
-import {TextField, Snackbar} from '@mui/material'; // Import Material-UI components
+import {TextField, Snackbar} from '@mui/material';
 import './Register.css';
-import Navbar from "../Shared/Navbar";
 import axios from 'axios';
 import MuiAlert from '@mui/material/Alert'
 import {useNavigate} from 'react-router-dom'
