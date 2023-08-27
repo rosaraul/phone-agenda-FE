@@ -6,6 +6,7 @@ import LoginPage from "./components/Login/LoginPage";
 import Navbar from "./components/Shared/Navbar";
 import RegisterPage from "./components/Register/RegisterPage";
 import MainPage from "./components/Contacts/MainPage";
+import ContactsProtectedRoute from "./utils/ContactsProtectedRoute";
 
 function App() {
     return (
@@ -17,7 +18,7 @@ function App() {
                     <Route path="/" element={<LandingPage/>}/>
                     <Route path="/login" element={<LoginPage/>}/>
                     <Route path="/register" element={<RegisterPage/>}/>
-                    <Route path="/contacts" element={<MainPage/>}/>
+                    <Route path="/contacts" element={<ContactsProtectedRoute><MainPage/></ContactsProtectedRoute>}/>
                 </Routes>
                 </Router>
             </div>
